@@ -36,7 +36,7 @@ const InputField = ({
         type={type}
         className={`block border ${
           isPatternInvalid ? "border-red-500" : "border-grey-light"
-        } w-full p-3 rounded mb-4`}
+        } w-full p-3 rounded mb-1`}
         name={name}
         id={id}
         value={value}

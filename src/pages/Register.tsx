@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import InputField from "./InputField";
+import InputField from "../components/InputField";
 
 const Register = () => {
   const [values, setValues] = useState({
@@ -55,6 +55,16 @@ const Register = () => {
       labelFor: "confirmPassword",
       pattern: values.password,
       required: true,
+    },
+    {
+      id: "avater",
+      name: "avater",
+      type: "file",
+      errorMessage: "Passwords don't match!",
+      labelText: "Profile Picture",
+      labelFor: "avater",
+      // pattern: values.password,
+      required: false,
     },
   ];
 

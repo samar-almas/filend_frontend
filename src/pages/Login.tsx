@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-import InputFiled from "./InputField";
+import InputFiled from "../InputField";
 
 const Login = () => {
   const [values, setValues] = useState<{ email: string; password: string }>({
